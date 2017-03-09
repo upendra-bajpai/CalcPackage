@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="displayShift">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+    <style name="displayFormula">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@color/graphite</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+    <style name="displayResult">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:background">@color/graphite</item>
+    </style>
+
+    <style name="PadButtonStyle" parent="Theme.AppCompat.Light">
+    <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textSize">14sp</item>
+    <item name="android:background">@color/graphite</item>
+    <item name="android:textColor">@color/orange</item>
+    </style>
+
+</resources>

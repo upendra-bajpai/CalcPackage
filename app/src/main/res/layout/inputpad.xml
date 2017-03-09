@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+    <TableLayout
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@mipmap/ic_launcher"
+        android:showDividers="middle"
+        android:shrinkColumns="0,1,2,3,4,5,6"
+        >
+    <TableRow
+        android:layout_weight="0.02"
+        android:gravity="center">
+    <Button
+        android:id="@+id/shift"
+        style="@style/Widget.AppCompat.Button.Borderless"   android:theme="@style/PadButtonStyle"
+        android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+        android:text="@string/shift"
+        />
+    <Button
+        android:id="@+id/sett"
+        style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+        android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+        android:text="@string/action_settings"/>
+    <Button
+        android:id="@+id/checkup"
+        style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+        android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+        android:text="@string/checkup"/>
+
+        <Button
+            android:id="@+id/checkdn"
+            style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+            android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+            android:text="@string/checkdn"/>
+
+        <Button
+        android:id="@+id/del"
+        style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+        android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+        android:text="@string/single_delete"/>
+    <Button
+        android:id="@+id/ac"
+        style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+        android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+        android:text="@string/clear"/>
+    </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/setting"
+        android:shrinkColumns="1,2,3,4,5"
+        android:stretchColumns="*"
+        >
+        <TableRow
+            android:layout_weight="0.02"
+           android:gravity="center">
+
+            <Button
+                android:id="@+id/log"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"
+                android:background="@drawable/buttonstyle"
+                android:text="@string/log"/>
+
+            <Button
+                android:id="@+id/square"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"  android:background="@drawable/buttonstyle"
+                android:text="@string/x_square"/>
+            <Button
+                android:id="@+id/cube"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"  android:background="@drawable/buttonstyle"
+                android:text="@string/cube"/>
+
+            <Button
+                android:id="@+id/power"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/x_power_y"/>
+            <Button
+                android:id="@+id/ln"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:theme="@style/PadButtonStyle"
+                android:text="@string/natural_log"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.02"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/sin"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/sin_sign"/>
+
+            <Button
+                android:id="@+id/cos"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/cos_sign"/>
+            <Button
+                android:id="@+id/tan"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/tan_sign"/>
+
+            <Button
+                android:id="@+id/factorial"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/factorial"/>
+            <Button
+                android:id="@+id/combination"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/combination"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.02"
+            android:gravity="center">
+
+
+        <Button
+            android:id="@+id/seven"
+            style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+            android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+            android:text="@string/seven_button"/>
+        <Button
+            android:id="@+id/eight"
+            style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+            android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+            android:text="@string/eight_button"/>
+        <Button
+            android:id="@+id/nine"
+            style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+            android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+            android:text="@string/nine_button"/>
+
+        <Button
+            android:id="@+id/lbarket"
+            style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+            android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+            android:text="@string/open_bracket"/>
+
+        <Button
+            android:id="@+id/rbracket"
+            style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+            android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+            android:text="@string/close_bracket"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="0.02"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/four"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/four_button"/>
+
+            <Button
+                android:id="@+id/five"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/five_button"/>
+            <Button
+                android:id="@+id/six"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/six_button"/>
+
+            <Button
+                android:id="@+id/plus"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/addition"/>
+            <Button
+                android:id="@+id/minus"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:theme="@style/PadButtonStyle"
+                android:text="@string/subtraction"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="0.02"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/one"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/one_button"/>
+
+            <Button
+                android:id="@+id/two"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/two_button"/>
+            <Button
+                android:id="@+id/three"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/three_button"/>
+
+            <Button
+                android:id="@+id/multiply"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/multiplication"/>
+            <Button
+                android:id="@+id/devide"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:theme="@style/PadButtonStyle"
+                android:text="@string/division"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="0.02"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/zero"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/zero_button"/>
+
+            <Button
+                android:id="@+id/point"
+                style="@style/Widget.AppCompat.Button.Borderless"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/point"/>
+            <Button
+                android:id="@+id/exponatial"
+                style="@style/PadButtonStyle"  android:theme="@style/PadButtonStyle"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:text="@string/expo"/>
+
+            <Button
+                android:id="@+id/percentage"
+                style="@style/PadButtonStyle"
+                  android:theme="@style/PadButtonStyle"
+                android:textColorHighlight="@color/colorAccent"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle"
+
+                 android:text="@string/percent"/>
+            <Button
+                android:id="@+id/equal"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:onClick="onButtonClick"   android:textAllCaps="false"   android:background="@drawable/buttonstyle" 
+                android:theme="@style/PadButtonStyle"
+                android:text="@string/equal_sign"/>
+        </TableRow>
+    </TableLayout>
+    </RelativeLayout>
+
